@@ -1,0 +1,21 @@
+.AboutMe {
+	background: linear-gradient(to left, rgb(236, 233, 230), rgb(255, 255, 255));
+}
+
+.AboutMe-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.card-text {
+	font-size: 18px;
+}
+
+.about-me-card {
+	min-height: 130px;
+}
+
+.download-icon {
+	color: #2b3035;
+}

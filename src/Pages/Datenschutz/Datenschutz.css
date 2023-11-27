@@ -1,0 +1,36 @@
+h1 {
+	font-size: 22px !important;
+}
+
+h2 {
+	font-size: 20px !important;
+}
+
+h3 {
+	font-size: 18px !important;
+}
+
+h4 {
+	font-size: 18px !important;
+}
+
+p {
+	font-size: 16px !important;
+}
+
+.back-icon-link {
+	position: absolute;
+	right: 5%;
+}
+
+.back-icon {
+	color: #2b3035;
+	font-size: 40px;
+}
+
+.back-icon:hover {
+	opacity: 0.95;
+}
+
+.container {
+}

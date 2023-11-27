@@ -1,0 +1,35 @@
+.MyPortfolio-container {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.img-hover:hover {
+	opacity: 0.8;
+}
+
+.portfolio-card-title {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.portfolio-card-language {
+	font-size: 22px;
+}
+
+.portfolio-card-button {
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 12px;
+	background-color: #2b3035;
+	border: solid 0px #2b3035;
+}
+
+.portfolio-card-button:hover {
+	background-color: #2b3035;
+	opacity: 0.9;
+}
+.portfolio-card-button:active {
+	background-color: #2b3035 !important;
+	opacity: 0.85;
+}

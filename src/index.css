@@ -1,0 +1,53 @@
+/* Global CSS */
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: 'Roboto', sans-serif;
+	-moz-osx-font-smoothing: 'Roboto', sans-serif;
+	font-style: normal;
+	background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+:root {
+	--primary: #2b3035;
+	--heading-color: #282938;
+	--bg-shade: #f5fcff;
+	--github: #e62872;
+	--darkblue: #1c1e53;
+	--black: #000000;
+	--white: #ffffff;
+}
+
+/* Main Headings */
+
+/* Heading 1 */
+h1 {
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 67px;
+}
+/* Heading 2 */
+h2 {
+	font-size: 48px ;
+	font-weight: 700 ;
+	line-height: 58px ;
+}
+/* Heading 3 */
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34px;
+}
+
+p {
+	font-size: 28px;
+}

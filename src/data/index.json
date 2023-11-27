@@ -1,0 +1,137 @@
+{
+	"skills": [
+		{
+			"id": "1",
+			"src": "../../public/img/skills/javascript.png",
+			"title": "JavaScript"
+		},
+		{
+			"id": "2",
+			"src": "../../public/img/skills/react.png",
+			"title": "React"
+		},
+		{
+			"id": "3",
+			"src": "../../public/img/skills/bootstrap.png",
+			"title": "Bootstrap"
+		},
+		{
+			"id": "4",
+			"src": "../../public/img/skills/scrum.png",
+			"title": "Scrum Master"
+		},
+		{
+			"id": "5",
+			"src": "../../public/img/skills/firebase.png",
+			"title": "Firebase"
+		},
+		{
+			"id": "6",
+			"src": "../../public/img/skills/git.png",
+			"title": "GIT"
+		},
+		{
+			"id": "7",
+			"src": "../../public/img/skills/css.png",
+			"title": "SCSS"
+		},
+		{
+			"id": "7",
+			"src": "../../public/img/skills/html.png",
+			"title": "HTML"
+		},
+		{
+			"id": "8",
+			"src": "../../public/img/skills/api.png",
+			"title": "Rest-Api"
+		},
+		{
+			"id": "9",
+			"src": "../../public/img/skills/angular.png",
+			"title": "Angular"
+		},
+		{
+			"id": "10",
+			"src": "../../public/img/skills/eldes.png",
+			"title": "Material design"
+		},
+		{
+			"id": "10",
+			"src": "../../public/img/skills/typescript.png",
+			"title": "TypeScript"
+		}
+	],
+	"portfolio": [
+		{
+			"id": "1",
+			"src": "./img/join.png",
+			"title": "Kanban Join",
+			"language": "React | Firebase | React-Bootstrap",
+			"description": "Ein Aufgabenmanager im Kanban-Stil hilft Ihnen bei der Erstellung und Organisation von Aufgaben durch Drag-and-Drop-Funktionen. Benutzer und Kategorien können zugewiesen werden, um Aufgaben besser zu strukturieren und zu verfolgen.",
+			"link": "View In Github",
+			"linkTest": "View In Github"
+		},
+		{
+			"id": "2",
+			"src": "./img/polloloco.png",
+			"title": "Pollo Loco",
+			"language": "JavaScript | CSS | HTML",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+			"link": "View In Github",
+			"linkTest": "View In Github"
+		},
+		{
+			"id": "3",
+			"src": "./img/pokedex.png",
+			"title": "Pokedex",
+			"language": "React | CSS | HTML | API | React-Bootstrap",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+			"link": "View In Github",
+			"linkTest": "View In Github"
+		},
+		{
+			"id": "4",
+			"src": "./img/cardgame.png",
+			"title": "Ring of Fire",
+			"language": "Angular | TypeScript | HTML | SCSS | Firebase",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+			"link": "View In Github",
+			"linkTest": "View In Github"
+		},
+		{
+			"id": "4",
+			"src": "./img/old-page.png",
+			"title": "Old Portfolio Page",
+			"language": "Angular | TypeScript | HTML | SCSS ",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+			"link": "View In Github",
+			"linkTest": "View In Github"
+		}
+	],
+	"testimonial": [
+		{
+			"id": "1",
+			"count": "5",
+			"src": "./img/avatar-image.png",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+			"author_name": "Dianne Russel",
+			"author_designation": "Starbucks"
+		},
+		{
+			"id": "2",
+			"count": "5",
+			"src": "./img/avatar-image-1.png",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+			"author_name": "Kristin Watson",
+			"author_designation": "Louis Vuitton"
+		},
+		{
+			"id": "3",
+			"count": "5",
+			"src": "./img/avatar-image-2.png",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+			"author_name": "Kathryn Murphy",
+			"author_designation": "McDonald's"
+		}
+	]
+}
