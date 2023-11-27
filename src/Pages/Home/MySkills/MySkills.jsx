@@ -1,6 +1,5 @@
 import data from '../../../data/index.json';
-import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import './MySkills.css';
 
 const MySkills = () => {
@@ -9,8 +8,7 @@ const MySkills = () => {
 			<Container fluid className='my-skills-containter'>
 				<Row>
 					<Col>
-						<p>My Skills</p>
-						<h2>My Expertise</h2>
+						<h2 className='skill-header'>Meine Skills</h2>
 					</Col>
 				</Row>
 

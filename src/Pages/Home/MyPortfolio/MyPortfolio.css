@@ -4,6 +4,10 @@
 	gap: 25px;
 }
 
+.myporfolio-header {
+	font-size: 28px;
+}
+
 .img-hover:hover {
 	opacity: 0.8;
 }

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import './ContactMe.css'
 
 const ContactMe = () => {
 	const [formData, setFormData] = useState({
@@ -7,7 +8,6 @@ const ContactMe = () => {
 		lastName: '',
 		email: '',
 		phoneNumber: '',
-		topic: '',
 		message: '',
 		termsAccepted: false,
 	});
@@ -27,16 +27,16 @@ const ContactMe = () => {
 	};
 
 	return (
-		<section id='Contact' className='py-5'>
+		<section id='Contact' className='py-5 contact-section'>
 			<Container>
 				<Row className='justify-content-center'>
-					<Col md={8}>
+					<Col md={8} className='contact-form'>
 						<p className='lead'>Get In Touch</p>
 						<h2>Contact Me</h2>
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.</p>
 
-						<Form onSubmit={handleSubmit}>
-							<Row>
+						<Form onSubmit={handleSubmit} className='form-styled'>
+							<Row className='my-2'>
 								<Col md={6}>
 									<Form.Group controlId='firstName'>
 										<Form.Label>First Name</Form.Label>
@@ -50,24 +50,15 @@ const ContactMe = () => {
 									</Form.Group>
 								</Col>
 							</Row>
-							<Form.Group controlId='email'>
+							<Form.Group controlId='email' className='mb-2'>
 								<Form.Label>Email</Form.Label>
 								<Form.Control type='email' required value={formData.email} onChange={handleChange} />
 							</Form.Group>
-							<Form.Group controlId='phoneNumber'>
+							<Form.Group controlId='phoneNumber' className='mb-2'>
 								<Form.Label>Phone Number</Form.Label>
 								<Form.Control type='number' required value={formData.phoneNumber} onChange={handleChange} />
 							</Form.Group>
-							<Form.Group controlId='topic'>
-								<Form.Label>Choose a topic</Form.Label>
-								<Form.Select value={formData.topic} onChange={handleChange}>
-									<option>Select One...</option>
-									<option value='item1'>Item 1</option>
-									<option value='item2'>Item 2</option>
-									<option value='item3'>Item 3</option>
-								</Form.Select>
-							</Form.Group>
-							<Form.Group controlId='message'>
+							<Form.Group controlId='message' className='mb-2'>
 								<Form.Label>Message</Form.Label>
 								<Form.Control
 									as='textarea'

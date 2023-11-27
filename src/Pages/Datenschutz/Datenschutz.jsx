@@ -6,7 +6,7 @@ import './Datenschutz.css';
 
 const Datenschutz = () => {
 	return (
-		<Container className=''>
+		<Container className='datenschutz'>
 			<Row className=''>
 				<Col className='mt-5'>
 					<Nav>

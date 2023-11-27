@@ -67,45 +67,45 @@
 			"src": "./img/join.png",
 			"title": "Kanban Join",
 			"language": "React | Firebase | React-Bootstrap",
-			"description": "Ein Aufgabenmanager im Kanban-Stil hilft Ihnen bei der Erstellung und Organisation von Aufgaben durch Drag-and-Drop-Funktionen. Benutzer und Kategorien können zugewiesen werden, um Aufgaben besser zu strukturieren und zu verfolgen.",
-			"link": "View In Github",
-			"linkTest": "View In Github"
+			"description": "Aufgabenverwaltung, die vom Kanban-System inspiriert ist. Erstelle und ordne Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzerinnen und Benutzer sowie Kategorien zu.",
+			"link": "https://github.com/EugenOswald/react-join-kanban",
+			"linkTest": "https://join-kanban.eugen-oswald.de/"
 		},
 		{
 			"id": "2",
 			"src": "./img/polloloco.png",
 			"title": "Pollo Loco",
 			"language": "JavaScript | CSS | HTML",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-			"link": "View In Github",
-			"linkTest": "View In Github"
+			"description": "Jump, run and throw game basierend auf einem objektorientierten Ansatz. Hilf Pepe dabei, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu gewinnen.",
+			"link": "https://github.com/EugenOswald/Pollp-Loco",
+			"linkTest": "https://pollo-loco.eugen-oswald.de/"
 		},
 		{
 			"id": "3",
 			"src": "./img/pokedex.png",
 			"title": "Pokedex",
 			"language": "React | CSS | HTML | API | React-Bootstrap",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-			"link": "View In Github",
-			"linkTest": "View In Github"
+			"description": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+			"link": "https://github.com/EugenOswald/pokedex-react",
+			"linkTest": "https://pokedex.eugen-oswald.de/"
 		},
 		{
 			"id": "4",
 			"src": "./img/cardgame.png",
 			"title": "Ring of Fire",
 			"language": "Angular | TypeScript | HTML | SCSS | Firebase",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-			"link": "View In Github",
-			"linkTest": "View In Github"
+			"description": "Ring of Fire ist ein Partyspiel, bei dem die Teilnehmer Karten ziehen und Aufgaben ausführen müssen.",
+			"link": "https://github.com/EugenOswald/ringoffire",
+			"linkTest": "https://ring-of-fire-67434.web.app/"
 		},
 		{
 			"id": "4",
 			"src": "./img/old-page.png",
 			"title": "Old Portfolio Page",
 			"language": "Angular | TypeScript | HTML | SCSS ",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-			"link": "View In Github",
-			"linkTest": "View In Github"
+			"description": "Altes Portfolio: Eine kompakte und effiziente Angular-basierte Web-Präsentation meiner Fähigkeiten und Projekte als Frontend-Entwickler.",
+			"link": "https://github.com/EugenOswald/ringoffire",
+			"linkTest": "https://ring-of-fire-67434.web.app/"
 		}
 	],
 	"testimonial": [

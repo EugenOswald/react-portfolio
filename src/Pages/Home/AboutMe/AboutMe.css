@@ -2,6 +2,13 @@
 	background: linear-gradient(to left, rgb(236, 233, 230), rgb(255, 255, 255));
 }
 
+.aboutme-header {
+	font-size: 28px;
+}
+p.text-14 {
+	font-size: 14px;
+}
+
 .AboutMe-container {
 	display: flex;
 	flex-direction: column;

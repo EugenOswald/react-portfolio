@@ -12,6 +12,10 @@
 	}
 }
 
+.skill-header {
+	font-size: 28px;
+}
+
 .my-skills-containter {
 	display: flex;
 	flex-direction: column;
@@ -48,7 +52,6 @@
 	background-color: #fff;
 	width: 60px;
 	margin: 20px;
-	
 }
 
 .card-name {
