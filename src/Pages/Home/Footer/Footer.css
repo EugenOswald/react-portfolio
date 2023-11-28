@@ -1,8 +1,15 @@
+footer {
+	background-color: #2b3035;
+	min-height: 40px;
+	display: flex;
+	align-self: center;
+}
+
 a.nav-link {
 	font-size: 16px;
 }
 
 .footer-link {
 	text-decoration: none;
-	color: #2b3035;
+	color: #fff;
 }

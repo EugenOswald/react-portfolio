@@ -8,7 +8,9 @@ const AboutMe = () => {
 		<section id='AboutMe' className='my-5 AboutMe'>
 			<Container className='AboutMe-container'>
 				<Row>
-					<h2 className='aboutme-header lead fw-bold text-align-center mb-4'>Über Mich</h2>
+					<Col>
+						<h2 className='aboutme-header lead fw-bold text-align-center mb-4'>Über Mich</h2>
+					</Col>
 				</Row>
 				<Row className='align-items-center'>
 					<Col lg={4}>

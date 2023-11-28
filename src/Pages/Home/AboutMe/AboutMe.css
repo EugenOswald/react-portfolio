@@ -1,5 +1,11 @@
 .AboutMe {
 	background: linear-gradient(to left, rgb(236, 233, 230), rgb(255, 255, 255));
+	padding: 50px 85px;
+}
+@media (max-width: 575.98px) {
+	.AboutMe {
+		padding: 50px 20px;
+	}
 }
 
 .aboutme-header {

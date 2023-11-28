@@ -24,7 +24,7 @@ const ContactMe = () => {
 		e.preventDefault();
 		// Senden der Formulardaten an das PHP-Backend
 		try {
-			const response = await fetch('../../../../send_mail.php', {
+			const response = await fetch('/send_mail.php', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -34,14 +34,11 @@ const ContactMe = () => {
 
 			if (response.ok) {
 				console.log('Formular erfolgreich gesendet');
-				// Weitere Aktionen nach erfolgreichem Senden, z.B. Benachrichtigung anzeigen
 			} else {
 				console.log('Fehler beim Senden des Formulars');
-				// Fehlerbehandlung
 			}
 		} catch (error) {
 			console.error('Es gab ein Problem mit der fetch-Anfrage:', error);
-			// Fehlerbehandlung
 		}
 	};
 

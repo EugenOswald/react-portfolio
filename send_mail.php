@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'your email';
+$recipient = import.meta.env.VITE_EMAIL;
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): // Allow preflighting to take place.
