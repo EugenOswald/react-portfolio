@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
-import './ContactMe.css'
+import './ContactMe.css';
 
 const ContactMe = () => {
 	const [formData, setFormData] = useState({
@@ -20,10 +20,29 @@ const ContactMe = () => {
 		}));
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		// Hier könntest du die Formulardaten an einen Server senden oder weiter verarbeiten
-		console.log('Form Data:', formData);
+		// Senden der Formulardaten an das PHP-Backend
+		try {
+			const response = await fetch('../../../../send_mail.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(formData),
+			});
+
+			if (response.ok) {
+				console.log('Formular erfolgreich gesendet');
+				// Weitere Aktionen nach erfolgreichem Senden, z.B. Benachrichtigung anzeigen
+			} else {
+				console.log('Fehler beim Senden des Formulars');
+				// Fehlerbehandlung
+			}
+		} catch (error) {
+			console.error('Es gab ein Problem mit der fetch-Anfrage:', error);
+			// Fehlerbehandlung
+		}
 	};
 
 	return (
@@ -31,21 +50,24 @@ const ContactMe = () => {
 			<Container>
 				<Row className='justify-content-center'>
 					<Col md={8} className='contact-form'>
-						<p className='lead'>Get In Touch</p>
-						<h2>Contact Me</h2>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.</p>
+						<p className='lead'>Nimm Kontakt auf</p>
+						<h2>Kontaktiere mich</h2>
+						<p>
+							Ich freue mich darauf, von dir zu hören! Kontaktiere mich, und lass uns gemeinsam herausfinden, wie wir deine
+							Vision verwirklichen können.
+						</p>
 
 						<Form onSubmit={handleSubmit} className='form-styled'>
 							<Row className='my-2'>
 								<Col md={6}>
 									<Form.Group controlId='firstName'>
-										<Form.Label>First Name</Form.Label>
+										<Form.Label>Vorname</Form.Label>
 										<Form.Control type='text' required value={formData.firstName} onChange={handleChange} />
 									</Form.Group>
 								</Col>
 								<Col md={6}>
 									<Form.Group controlId='lastName'>
-										<Form.Label>Last Name</Form.Label>
+										<Form.Label>Nachname</Form.Label>
 										<Form.Control type='text' required value={formData.lastName} onChange={handleChange} />
 									</Form.Group>
 								</Col>
@@ -55,15 +77,15 @@ const ContactMe = () => {
 								<Form.Control type='email' required value={formData.email} onChange={handleChange} />
 							</Form.Group>
 							<Form.Group controlId='phoneNumber' className='mb-2'>
-								<Form.Label>Phone Number</Form.Label>
+								<Form.Label>Tel.Nummer</Form.Label>
 								<Form.Control type='number' required value={formData.phoneNumber} onChange={handleChange} />
 							</Form.Group>
 							<Form.Group controlId='message' className='mb-2'>
-								<Form.Label>Message</Form.Label>
+								<Form.Label>Nachricht</Form.Label>
 								<Form.Control
 									as='textarea'
 									rows={8}
-									placeholder='Type your message...'
+									placeholder='Deine Nachricht...'
 									value={formData.message}
 									onChange={handleChange}
 								/>
@@ -71,14 +93,14 @@ const ContactMe = () => {
 							<Form.Group controlId='termsAccepted' className='mb-3'>
 								<Form.Check
 									type='checkbox'
-									label='I accept the terms'
+									label='Ich akzeptiere die Nutzungsbedingungen.'
 									required
 									checked={formData.termsAccepted}
 									onChange={handleChange}
 								/>
 							</Form.Group>
 							<Button variant='primary' type='submit'>
-								Submit
+								Absenden
 							</Button>
 						</Form>
 					</Col>
