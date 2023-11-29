@@ -9,17 +9,17 @@ function Footer() {
 	};
 	return (
 		<footer>
-			<Container>
+			<Container className='d-flex align-items-center justify-content-end'>
 				<Row>
 					<Col>
-						<Nav className='d-flex justify-content-end'>
+						<Nav className=''>
 							<Nav.Item className='me-4'>
 								<Link className='footer-link' to='impressum' onClick={scrollToTop}>
 									Impressum
 								</Link>
 							</Nav.Item>
 							<Nav.Item>
-								<Link className='footer-link' to='/datenschutz' onClick={scrollToTop}>
+								<Link className='footer-link' to='datenschutz' onClick={scrollToTop}>
 									Datenschutz
 								</Link>
 							</Nav.Item>

@@ -13,8 +13,8 @@ const AboutMe = () => {
 					</Col>
 				</Row>
 				<Row className='align-items-center'>
-					<Col lg={4}>
-						<Image src='./img/about-me.png' alt='About Me' className='w-100' rounded />
+					<Col className='d-flex justify-content-center mb-4 mb-lg-0' lg={4}>
+						<Image src='./img/comicEugen.png' alt='About Me' className='w-100 eugen-image' rounded />
 					</Col>
 					<Col lg={8}>
 						<Row className='justify-content-center'>

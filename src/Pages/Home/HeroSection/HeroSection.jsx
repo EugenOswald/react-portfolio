@@ -10,14 +10,14 @@ function HeroSection() {
 			<Container className='heroSection-container d-flex '>
 				<Row className=''>
 					<Col lg={6} className='d-flex order-2 order-lg-2  justify-content-center align-items-center flex-column'>
-						<div className='d-flex justify-content-center flex-column mb-5'>
+						<div className='d-flex justify-content-center flex-column text-center text-lg-start mb-5'>
 							<p className='mb-1'>Hallo, ich bin Eugen</p>
 							<h1 className='mb-1'>Frontend Developer</h1>
 							<p className='mb-4'>
 								Als auf React spezialisierter Entwickler gestalte ich effektiv Webseiten und Apps, die
 								Benutzerfreundlichkeit und moderne Technologien vereinen.
 							</p>
-							<div className='d-flex flex-sm-row flex-column align-items-center'>
+							<div className='d-flex flex-sm-row flex-column align-items-center justify-content-center justify-content-lg-start'>
 								<Button variant='dark' className=' px-3 py-2'>
 									Kontaktiere mich
 								</Button>

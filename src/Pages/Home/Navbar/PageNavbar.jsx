@@ -13,7 +13,7 @@ const PageNavbar = () => {
 			<Navbar
 				className='bg-body-tertiary navbar-container'
 				collapseOnSelect
-				expand='md'
+				expand='lg'
 				fixed='top'
 				style={{ minHeight: '100px', padding: '10px' }}
 			>
@@ -25,16 +25,16 @@ const PageNavbar = () => {
 							<Link to='heroSection' className='nav-link me-4'>
 								Home
 							</Link>
+							<Link to='AboutMe' className='nav-link me-4'>
+								Über Mich
+							</Link>
 							<Link to='MyPortfolio' className='nav-link me-4'>
 								Portfolio
-							</Link>
-							<Link to='AboutMe' className='nav-link me-4'>
-								About Me
 							</Link>
 						</Nav>
 						<Nav>
 							<Link to='Contact' className='btn btn-outline-dark px-4 py-2'>
-								Contact Me
+								Kontaktiere mich
 							</Link>
 						</Nav>
 					</Navbar.Collapse>

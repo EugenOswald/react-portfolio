@@ -12,13 +12,14 @@ const Datenschutz = () => {
 					<Nav>
 						<Nav.Item>
 							<Link className='back-icon-link' to='/'>
-								<BsArrowLeftCircleFill className='back-icon'/>
+								<BsArrowLeftCircleFill className='back-icon' />
 							</Link>
 						</Nav.Item>
 					</Nav>
 					<h1>Datenschutz&shy;erkl&auml;rung</h1>
 					<h2>1. Datenschutz auf einen Blick</h2>
-					<h3>Allgemeine Hinweise</h3>{' '}
+					<br />
+					<h3>Allgemeine Hinweise</h3> <br />
 					<p>
 						Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen Daten
 						passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie pers&ouml;nlich
@@ -56,7 +57,9 @@ const Datenschutz = () => {
 						Weiteren steht Ihnen ein Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde zu.
 					</p>{' '}
 					<p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz k&ouml;nnen Sie sich jederzeit an uns wenden.</p>
+					<br />
 					<h2>2. Hosting</h2>
+					<br />
 					<p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
 					<h3>All-Inkl</h3>{' '}
 					<p>
@@ -82,7 +85,9 @@ const Datenschutz = () => {
 						die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO
 						verarbeitet.
 					</p>
+					<br />
 					<h2>3. Allgemeine Hinweise und Pflicht&shy;informationen</h2>
+					<br />
 					<h3>Datenschutz</h3>{' '}
 					<p>
 						Die Betreiber dieser Seiten nehmen den Schutz Ihrer pers&ouml;nlichen Daten sehr ernst. Wir behandeln Ihre
@@ -239,7 +244,9 @@ const Datenschutz = () => {
 						Wenn die SSL- bzw. TLS-Verschl&uuml;sselung aktiviert ist, k&ouml;nnen die Daten, die Sie an uns &uuml;bermitteln,
 						nicht von Dritten mitgelesen werden.
 					</p>
+					<br />
 					<h2>4. Datenerfassung auf dieser Website</h2>
+					<br />
 					<h3>Kontaktformular</h3>{' '}
 					<p>
 						Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der

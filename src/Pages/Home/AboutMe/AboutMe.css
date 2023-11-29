@@ -7,6 +7,9 @@
 		padding: 50px 20px;
 	}
 }
+.eugen-image {
+	max-width: 400px;
+}
 
 .aboutme-header {
 	font-size: 28px;
