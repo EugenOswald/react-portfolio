@@ -2,6 +2,29 @@ import React, { useState, useEffect } from 'react';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
 import './ContactMe.css';
 
+const saveToLocalStorage = (key, value, expirationInMinutes) => {
+	const now = new Date();
+	const item = {
+		value: value,
+		expiry: now.getTime() + expirationInMinutes * 60000,
+	};
+	localStorage.setItem(key, JSON.stringify(item));
+};
+
+const getFromLocalStorage = (key) => {
+	const itemStr = localStorage.getItem(key);
+	if (!itemStr) {
+		return null;
+	}
+	const item = JSON.parse(itemStr);
+	const now = new Date();
+	if (now.getTime() > item.expiry) {
+		localStorage.removeItem(key);
+		return null;
+	}
+	return item.value;
+};
+
 const ContactMe = () => {
 	const [formData, setFormData] = useState({
 		firstName: '',
@@ -19,17 +42,19 @@ const ContactMe = () => {
 
 	useEffect(() => {
 		// Lade den Zähler aus dem localStorage beim Start
-		const count = parseInt(localStorage.getItem('formSentCount') || '0');
-		setFormSentCount(count);
-		if (count >= 2) {
+		const count = getFromLocalStorage('formSentCount');
+		const countValue = count ? parseInt(count) : 0;
+		setFormSentCount(countValue);
+		if (countValue >= 2) {
 			setFormVisible(false);
 		}
 	}, []);
 
+
 	const updateFormSentCount = () => {
 		const newCount = formSentCount + 1;
 		setFormSentCount(newCount);
-		localStorage.setItem('formSentCount', newCount.toString());
+		saveToLocalStorage('formSentCount', newCount, 1);
 		if (newCount >= 2) {
 			setFormVisible(false);
 		}
