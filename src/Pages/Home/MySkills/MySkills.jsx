@@ -1,14 +1,16 @@
 import data from '../../../data/index.json';
+import { useTranslation } from 'react-i18next';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './MySkills.css';
 
 const MySkills = () => {
+	const { t } = useTranslation();
 	return (
 		<section className='my-skills' id='mySkills'>
 			<Container fluid className='my-skills-containter'>
 				<Row>
 					<Col>
-						<h2 className='skill-header'>Meine Skills</h2>
+						<h2 className='skill-header'>{t('mySkills.title')}</h2>
 					</Col>
 				</Row>
 

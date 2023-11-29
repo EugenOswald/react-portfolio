@@ -1,0 +1,24 @@
+{
+	"navbar": {
+		"home": "Home",
+		"aboutMe": "Über Mich",
+		"portfolio": "Portfolio",
+		"contactMe": "Kontaktiere mich"
+	},
+	"mySkills": {
+		"title": "Meine Skills"
+	},
+	"portfolio": {
+		"title": "Mein Portfolio",
+		"github": "Mein GitHub",
+		"viewGithub": "GitHub",
+		"liveDemo": "Live Test",
+		"projects": {
+			"1": {
+				"title": "Kanban Join",
+				"description": "Aufgabenverwaltung, die vom Kanban-System inspiriert ist..."
+			}
+		
+		}
+	}
+}

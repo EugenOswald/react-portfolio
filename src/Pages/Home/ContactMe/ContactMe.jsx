@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
 import './ContactMe.css';
 
@@ -170,7 +170,7 @@ const ContactMe = () => {
 								</Form>{' '}
 							</>
 						) : (
-							<Alert variant='success'>
+							<Alert variant='success' className='my-4'>
 								Das Formular wurde erfolgreich gesendet. <br />
 								<strong>Hinweis:</strong> Du hast die maximale Anzahl an zulässigen Einsendungen erreicht. Bitte warte eine
 								Weile, bevor du das Formular erneut absendest.

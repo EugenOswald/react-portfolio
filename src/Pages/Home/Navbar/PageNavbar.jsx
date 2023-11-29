@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import LanguageSwitcher from '../../../components/LanguageSwitcher/LanguageSwitcher';
 import './PageNavbar.css';
 
-import React from 'react';
-
 const PageNavbar = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<Navbar
@@ -23,19 +24,22 @@ const PageNavbar = () => {
 					<Navbar.Collapse id='responsive-navbar-nav'>
 						<Nav className='ms-5 me-auto'>
 							<Link to='heroSection' className='nav-link me-4'>
-								Home
+								{t('navbar.home')}
 							</Link>
 							<Link to='AboutMe' className='nav-link me-4'>
-								Über Mich
+								{t('navbar.aboutMe')}
 							</Link>
 							<Link to='MyPortfolio' className='nav-link me-4'>
-								Portfolio
+								{t('navbar.portfolio')}
 							</Link>
 						</Nav>
-						<Nav>
+						<Nav className='d-flex align-items-center mb-3 mb-lg-0 me-lg-3 me-0'>
 							<Link to='Contact' className='btn btn-outline-dark px-4 py-2'>
-								Kontaktiere mich
+								{t('navbar.contactMe')}
 							</Link>
+						</Nav>
+						<Nav className='d-flex align-items-center'>
+							<LanguageSwitcher />
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
