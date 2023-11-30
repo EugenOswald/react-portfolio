@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home';
 import Footer from './Pages/Home/Footer/Footer';
 import Datenschutz from './Pages/Datenschutz/Datenschutz';
 import Impressum from './Pages/Impressum/Impressum';
-import './App.css';
+import './styles/App.css';
 
 function App() {
 	const location = useLocation();

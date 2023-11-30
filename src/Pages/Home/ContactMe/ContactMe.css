@@ -31,3 +31,7 @@
 .submit-btn.btn.btn-primary:hover {
 	opacity: 0.9;
 }
+
+.form-label {
+	font-weight: 500;
+}
