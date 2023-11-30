@@ -1,15 +1,18 @@
 import { Container, Row, Col, Image, Card } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import { BsFillBriefcaseFill, BsFillBookFill, BsDownload } from 'react-icons/bs';
 import './AboutMe.css';
 import advancedReactPdf from '../../../../public/pdfs/advanced-react.pdf';
 
 const AboutMe = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section id='AboutMe' className='my-5 AboutMe'>
 			<Container className='AboutMe-container'>
 				<Row>
 					<Col>
-						<h2 className='aboutme-header lead fw-bold text-align-center mb-4'>Über Mich</h2>
+						<h2 className='aboutme-header lead fw-bold text-align-center mb-4'>{t('aboutMe.header')}</h2>
 					</Col>
 				</Row>
 				<Row className='align-items-center'>
@@ -22,10 +25,10 @@ const AboutMe = () => {
 								<Card className='mb-3  mx-3 about-me-card'>
 									<Card.Body className='d-flex flex-row justify-content-start align-items-center'>
 										<div>
-											<Card.Title className='text-center'>Erfahrungen</Card.Title>
+											<Card.Title className='text-center'>{t('aboutMe.experience.title')}</Card.Title>
 											<div className='d-flex align-items-center'>
 												<BsFillBriefcaseFill size={30} className='mr-3' />
-												<Card.Text className='mx-2 text-muted text-14'>1+ Jahr</Card.Text>
+												<Card.Text className='mx-2 text-muted text-14'>{t('aboutMe.experience.years')}</Card.Text>
 												<Card.Text className='text-14'>Frontend Development</Card.Text>
 											</div>
 										</div>
@@ -36,7 +39,7 @@ const AboutMe = () => {
 								<Card className='mb-3 mx-3 p-0 about-me-card'>
 									<Card.Body className='d-flex flex-row justify-content-start align-items-center'>
 										<div>
-											<Card.Title className='text-center'>Zertifikate</Card.Title>
+											<Card.Title className='text-center'>{t('aboutMe.certificates.title')}</Card.Title>
 											<div className='d-flex align-items-center'>
 												<BsFillBookFill size={30} className='mr-3' />
 												<div className='ms-2'>
@@ -61,12 +64,7 @@ const AboutMe = () => {
 						</Row>
 						<Row>
 							<Col className='p-4'>
-								<p className='text-muted'>
-									Hi, ich bin Eugen, ein passionierter Frontend-Entwickler mit Fokus auf JavaScript, React und Angular.
-									Meine Leidenschaft gilt der Entwicklung innovativer Webanwendungen. In meiner Freizeit widme ich mich
-									kreativen Projekten und dem kontinuierlichen Erlernen neuer Technologien, um meine Fähigkeiten stets zu
-									erweitern und auf dem neuesten Stand zu bleiben.
-								</p>
+								<p className='text-muted'>{t('aboutMe.description')}</p>
 							</Col>
 						</Row>
 					</Col>

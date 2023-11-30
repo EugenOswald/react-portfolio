@@ -2,62 +2,62 @@
 	"skills": [
 		{
 			"id": "1",
-			"src": "../../public/img/skills/javascript.png",
+			"src": "./img/skills/javascript.png",
 			"title": "JavaScript"
 		},
 		{
 			"id": "2",
-			"src": "../../public/img/skills/react.png",
+			"src": "./img/skills/react.png",
 			"title": "React"
 		},
 		{
 			"id": "3",
-			"src": "../../public/img/skills/bootstrap.png",
+			"src": "./img/skills/bootstrap.png",
 			"title": "Bootstrap"
 		},
 		{
 			"id": "4",
-			"src": "../../public/img/skills/scrum.png",
+			"src": "./img/skills/scrum.png",
 			"title": "Scrum Master"
 		},
 		{
 			"id": "5",
-			"src": "../../public/img/skills/firebase.png",
+			"src": "./img/skills/firebase.png",
 			"title": "Firebase"
 		},
 		{
 			"id": "6",
-			"src": "../../public/img/skills/git.png",
+			"src": "./img/skills/git.png",
 			"title": "GIT"
 		},
 		{
 			"id": "7",
-			"src": "../../public/img/skills/css.png",
+			"src": "./img/skills/css.png",
 			"title": "SCSS"
 		},
 		{
 			"id": "7",
-			"src": "../../public/img/skills/html.png",
+			"src": "./img/skills/html.png",
 			"title": "HTML"
 		},
 		{
 			"id": "8",
-			"src": "../../public/img/skills/api.png",
+			"src": "./img/skills/api.png",
 			"title": "Rest-Api"
 		},
 		{
 			"id": "9",
-			"src": "../../public/img/skills/angular.png",
+			"src": "./img/skills/angular.png",
 			"title": "Angular"
 		},
 		{
 			"id": "10",
-			"src": "../../public/img/skills/eldes.png",
+			"src": "./img/skills/eldes.png",
 			"title": "Material design"
 		},
 		{
 			"id": "10",
-			"src": "../../public/img/skills/typescript.png",
+			"src": "./img/skills/typescript.png",
 			"title": "TypeScript"
 		}
 	],
@@ -99,13 +99,13 @@
 			"linkTest": "https://ring-of-fire-67434.web.app/"
 		},
 		{
-			"id": "4",
+			"id": "5",
 			"src": "./img/old-page.png",
 			"title": "Old Portfolio Page",
 			"language": "Angular | TypeScript | HTML | SCSS ",
 			"description": "Altes Portfolio: Eine kompakte und effiziente Angular-basierte Web-Präsentation meiner Fähigkeiten und Projekte als Frontend-Entwickler.",
-			"link": "https://github.com/EugenOswald/ringoffire",
-			"linkTest": "https://ring-of-fire-67434.web.app/"
+			"link": "https://github.com/EugenOswald/Portfolio",
+			"linkTest": "https://old-page.eugen-oswald.de/"
 		}
 	],
 	"testimonial": [

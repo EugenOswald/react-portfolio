@@ -5,6 +5,12 @@
 		"portfolio": "Portfolio",
 		"contactMe": "Kontaktiere mich"
 	},
+	"heroSection": {
+		"greeting": "Hallo, ich bin Eugen",
+		"role": "Frontend Developer",
+		"description": "Als auf React spezialisierter Entwickler gestalte ich effektiv Webseiten und Apps, die Benutzerfreundlichkeit und moderne Technologien vereinen.",
+		"contactMe": "Kontaktiere mich"
+	},
 	"mySkills": {
 		"title": "Meine Skills"
 	},
@@ -16,9 +22,57 @@
 		"projects": {
 			"1": {
 				"title": "Kanban Join",
-				"description": "Aufgabenverwaltung, die vom Kanban-System inspiriert ist..."
+				"description": "Aufgabenverwaltung, die vom Kanban-System inspiriert ist. Erstelle und ordne Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzerinnen und Benutzer sowie Kategorien zu."
+			},
+			"2": {
+				"title": "Pollo Loco",
+				"description": "mp, run and throw game basierend auf einem objektorientierten Ansatz. Hilf Pepe dabei, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu gewinnen."
+			},
+			"3": {
+				"title": "Pokedex",
+				"description": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+			},
+			"4": {
+				"title": "Ring of Fire",
+				"description": "Ring of Fire ist ein Partyspiel, bei dem die Teilnehmer Karten ziehen und Aufgaben ausführen müssen."
+			},
+			"5": {
+				"title": "Alte Portfolioseite",
+				"description": "Altes Portfolio: Eine kompakte und effiziente Angular-basierte Web-Präsentation meiner Fähigkeiten und Projekte als Frontend-Entwickler."
 			}
-		
 		}
+	},
+	"aboutMe": {
+		"header": "Über Mich",
+		"experience": {
+			"title": "Erfahrungen",
+			"years": "1+ Jahr"
+		},
+		"certificates": {
+			"title": "Zertifikate"
+		},
+		"description": "Hi, ich bin Eugen, ein passionierter Frontend-Entwickler mit Fokus auf JavaScript, React und Angular. Meine Leidenschaft gilt der Entwicklung innovativer Webanwendungen. In meiner Freizeit widme ich mich kreativen Projekten und dem kontinuierlichen Erlernen neuer Technologien, um meine Fähigkeiten stets zu erweitern und auf dem neuesten Stand zu bleiben."
+	},
+	"contact": {
+		"title": "Kontaktiere mich",
+		"intro": "Ich freue mich darauf, von dir zu hören! Kontaktiere mich, und lass uns gemeinsam herausfinden, wie wir deine Vision verwirklichen können.",
+		"firstName": "Vorname",
+		"lastName": "Nachname",
+		"email": "Email",
+		"phoneNumber": "Tel.Nummer",
+		"message": "Nachricht",
+		"messageplaceholder": "Deine Nachricht...",
+		"termsAcceptance": "Ich akzeptiere die Nutzungsbedingungen.",
+		"submit": "Absenden",
+		"submitting": "Sendet...",
+		"formSuccess": "Das Formular wurde erfolgreich gesendet. Hinweis: Du hast die maximale Anzahl an zulässigen Einsendungen erreicht. Bitte warte eine Weile, bevor du das Formular erneut absendest.",
+		"invalidEmail": "Ungültige E-Mail-Adresse.",
+		"formSuccesses": "Formular erfolgreich gesendet.",
+		"formError": "Fehler beim Senden des Formulars.",
+		"fetchError": "Es gab ein Problem mit der fetch-Anfrage"
+	},
+	"footer": {
+		"imprint": "Impressum",
+		"privacyPolicy": "Datenschutz"
 	}
 }

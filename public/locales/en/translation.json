@@ -5,22 +5,75 @@
 		"portfolio": "Portfolio",
 		"contactMe": "Contact Me"
 	},
+	"heroSection": {
+		"greeting": "Hello, I'm Eugen",
+		"role": "Frontend Developer",
+		"description": "As a React-specialized developer, I effectively design websites and apps that combine user-friendliness and modern technologies.",
+		"contactMe": "Contact Me"
+	},
 	"mySkills": {
 		"title": "My Skills"
 	},
-	
-  "portfolio": {
-    "title": "My Portfolio",
-    "github": "My GitHub",
-    "viewGithub": "GitHub",
-    "liveDemo": "Live Demo",
-    "projects": {
-      "1": {
-        "title": "Kanban Join",
-        "description": "Task management inspired by the Kanban system..."
-      }
 
-    }
-  }
-
+	"portfolio": {
+		"title": "My Portfolio",
+		"github": "My GitHub",
+		"viewGithub": "GitHub",
+		"liveDemo": "Live Demo",
+		"projects": {
+			"1": {
+				"title": "Kanban Join",
+				"description": "Task management inspired by the Kanban system. Create and assign tasks using drag-and-drop functions, assign users and categories."
+			},
+			"2": {
+				"title": "Pollo Loco",
+				"description": "Jump, run and throw game based on an object-oriented approach. Help Pepe find coins and Tabasco salsa to win against the crazy chicken."
+			},
+			"3": {
+				"title": "Pokedex",
+				"description": "Based on the PokéAPI, a simple library that provides and catalogs Pokémon information."
+			},
+			"4": {
+				"title": "Ring of Fire",
+				"description": "Ring of Fire is a party game in which the participants have to draw cards and perform tasks."
+			},
+			"5": {
+				"title": "Old portfolio page",
+				"description": "Old portfolio: A compact and efficient Angular-based web presentation of my skills and projects as a front-end developer."
+			}
+		}
+	},
+	"aboutMe": {
+		"header": "About Me",
+		"experience": {
+			"title": "Experience",
+			"years": "1+ Year"
+		},
+		"certificates": {
+			"title": "Certificates"
+		},
+		"description": "Hi, I'm Eugen, a passionate frontend developer with a focus on JavaScript, React and Angular. My passion is developing innovative web applications. In my spare time I dedicate myself to creative projects and continuously learning new technologies to keep my skills sharp and up to date."
+	},
+	"contact": {
+		"title": "Contact Me",
+		"intro": "I look forward to hearing from you! Contact me, and let's find out together how we can realize your vision.",
+		"firstName": "First Name",
+		"lastName": "Last Name",
+		"email": "Email",
+		"phoneNumber": "Phone Number",
+		"message": "Message",
+		"messageplaceholder": "Your message...",
+		"termsAcceptance": "I accept the terms and conditions.",
+		"submit": "Submit",
+		"submitting": "Submitting...",
+		"formSuccess": "The form has been sent successfully. Note: You have reached the maximum number of allowable submissions. Please wait a while before submitting the form again.",
+		"invalidEmail": "Invalid email address.",
+		"formSuccesses": "Form submitted successfully.",
+		"formError": "Error submitting the form.",
+		"fetchError": "There was a problem with the fetch request"
+	},
+	"footer": {
+		"imprint": "Imprint",
+		"privacyPolicy": "Privacy Policy"
+	}
 }

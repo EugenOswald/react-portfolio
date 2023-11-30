@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import './ContactMe.css';
 
 const saveToLocalStorage = (key, value, expirationInMinutes) => {
@@ -26,6 +27,7 @@ const getFromLocalStorage = (key) => {
 };
 
 const ContactMe = () => {
+	const { t } = useTranslation();
 	const [formData, setFormData] = useState({
 		firstName: '',
 		lastName: '',
@@ -41,7 +43,6 @@ const ContactMe = () => {
 	const [formVisible, setFormVisible] = useState(true);
 
 	useEffect(() => {
-		// Lade den Zähler aus dem localStorage beim Start
 		const count = getFromLocalStorage('formSentCount');
 		const countValue = count ? parseInt(count) : 0;
 		setFormSentCount(countValue);
@@ -50,11 +51,10 @@ const ContactMe = () => {
 		}
 	}, []);
 
-
 	const updateFormSentCount = () => {
 		const newCount = formSentCount + 1;
 		setFormSentCount(newCount);
-		saveToLocalStorage('formSentCount', newCount, 1);
+		saveToLocalStorage('formSentCount', newCount, 60);
 		if (newCount >= 2) {
 			setFormVisible(false);
 		}
@@ -78,7 +78,7 @@ const ContactMe = () => {
 		e.preventDefault();
 
 		if (!isEmailValid(formData.email)) {
-			setSubmitStatus({ success: false, message: 'Ungültige E-Mail-Adresse.' });
+			setSubmitStatus({ success: false, message: t('contact.invalidEmail') });
 			return;
 		}
 
@@ -93,13 +93,13 @@ const ContactMe = () => {
 			});
 
 			if (response.ok) {
-				setSubmitStatus({ success: true, message: 'Formular erfolgreich gesendet.' });
+				setSubmitStatus({ success: true, message: t('contact.formSuccesses') });
 				updateFormSentCount();
 			} else {
-				setSubmitStatus({ success: false, message: 'Fehler beim Senden des Formulars.' });
+				setSubmitStatus({ success: false, message: t('contact.formError') });
 			}
 		} catch (error) {
-			setSubmitStatus({ success: false, message: `Es gab ein Problem mit der fetch-Anfrage: ${error}` });
+			setSubmitStatus({ success: false, message: `${t('contact.fetchError')}: ${error}` });
 		} finally {
 			setIsSubmitting(false);
 		}
@@ -110,47 +110,46 @@ const ContactMe = () => {
 			<Container>
 				<Row className='justify-content-center'>
 					<Col md={8} className='contact-form'>
-						<p className='lead'>Nimm Kontakt auf</p>
-						<h2>Kontaktiere mich</h2>
-						<p>
-							Ich freue mich darauf, von dir zu hören! Kontaktiere mich, und lass uns gemeinsam herausfinden, wie wir deine
-							Vision verwirklichen können.
-						</p>
+						<p className='lead'>{t('contact.intro')}</p>
+						<h2>{t('contact.title')}</h2>
+						<p>{t('contact.intro')}</p>
 
 						{formVisible ? (
 							<>
 								{submitStatus && (
-									<Alert variant={submitStatus.success ? 'success' : 'danger'}>{submitStatus.message}</Alert>
+									<Alert className='my-2' variant={submitStatus.success ? 'success' : 'danger'}>
+										{submitStatus.message}
+									</Alert>
 								)}
 								<Form onSubmit={handleSubmit} className='form-styled'>
 									<Row className='my-2'>
 										<Col md={6}>
 											<Form.Group controlId='firstName'>
-												<Form.Label>Vorname</Form.Label>
+												<Form.Label>{t('contact.firstName')}</Form.Label>
 												<Form.Control type='text' required value={formData.firstName} onChange={handleChange} />
 											</Form.Group>
 										</Col>
 										<Col md={6}>
 											<Form.Group controlId='lastName'>
-												<Form.Label>Nachname</Form.Label>
+												<Form.Label>{t('contact.lastName')}</Form.Label>
 												<Form.Control type='text' required value={formData.lastName} onChange={handleChange} />
 											</Form.Group>
 										</Col>
 									</Row>
 									<Form.Group controlId='email' className='mb-2'>
-										<Form.Label>Email</Form.Label>
+										<Form.Label>{t('contact.email')}</Form.Label>
 										<Form.Control type='email' required value={formData.email} onChange={handleChange} />
 									</Form.Group>
 									<Form.Group controlId='phoneNumber' className='mb-2'>
-										<Form.Label>Tel.Nummer</Form.Label>
+										<Form.Label>{t('contact.phoneNumber')}</Form.Label>
 										<Form.Control type='number' required value={formData.phoneNumber} onChange={handleChange} />
 									</Form.Group>
 									<Form.Group controlId='message' className='mb-2'>
-										<Form.Label>Nachricht</Form.Label>
+										<Form.Label>{t('contact.message')}</Form.Label>
 										<Form.Control
 											as='textarea'
 											rows={8}
-											placeholder='Deine Nachricht...'
+											placeholder={t('contact.messageplaceholder')}
 											value={formData.message}
 											onChange={handleChange}
 										/>
@@ -158,22 +157,20 @@ const ContactMe = () => {
 									<Form.Group controlId='termsAccepted' className='mb-3'>
 										<Form.Check
 											type='checkbox'
-											label='Ich akzeptiere die Nutzungsbedingungen.'
+											label={t('contact.termsAcceptance')}
 											required
 											checked={formData.termsAccepted}
 											onChange={handleChange}
 										/>
 									</Form.Group>
-									<Button variant='primary' type='submit' disabled={isSubmitting}>
-										{isSubmitting ? 'Sendet...' : 'Absenden'}
+									<Button className='submit-btn' variant='primary' type='submit' disabled={isSubmitting}>
+										{isSubmitting ? t('contact.submitting') : t('contact.submit')}
 									</Button>
 								</Form>{' '}
 							</>
 						) : (
 							<Alert variant='success' className='my-4'>
-								Das Formular wurde erfolgreich gesendet. <br />
-								<strong>Hinweis:</strong> Du hast die maximale Anzahl an zulässigen Einsendungen erreicht. Bitte warte eine
-								Weile, bevor du das Formular erneut absendest.
+								{t('contact.formSuccess')}
 							</Alert>
 						)}
 					</Col>

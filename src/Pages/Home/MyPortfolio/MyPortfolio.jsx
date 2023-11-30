@@ -17,7 +17,7 @@ export default function MyPortfolio() {
 
 				<Row className='mb-4'>
 					<Col>
-						<Button className='portfolio-card-button' href='https://github.com/yourusername' target='_blank'>
+						<Button className='portfolio-card-button' href='https://github.com/EugenOswald' target='_blank'>
 							{t('portfolio.github')}
 						</Button>
 					</Col>
